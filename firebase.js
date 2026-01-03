@@ -27,17 +27,17 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
 
 // ⚠️ REPLACE THESE WITH REAL VALUES FROM FIREBASE
-export const firebaseConfig = {
-  apiKey: "AIzaSyXXXXXXXXXXXXXXX",
+const firebaseConfig = {
+  apiKey: "AIzaSyDZZRr754hFPKalq3MBdEv0VDheG_vPLe0",
   authDomain: "east-charlotte-christian-2026.firebaseapp.com",
   projectId: "east-charlotte-christian-2026",
-  storageBucket: "east-charlotte-christian-2026.appspot.com",
-  messagingSenderId: "XXXXXXXXXX",
-  appId: "1:XXXXXXXX:web:XXXXXXXX"
+  storageBucket: "east-charlotte-christian-2026.firebasestorage.app",
+  messagingSenderId: "358859491654",
+  appId: "1:358859491654:web:f14516a4eb2b3156cabd47"
 };
 
-// ✅ Initialize Firebase
-export const app = initializeApp(firebaseConfig);
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
 // ✅ Auth + DB (THIS FIXES YOUR ERROR)
 export const auth = getAuth(app);
