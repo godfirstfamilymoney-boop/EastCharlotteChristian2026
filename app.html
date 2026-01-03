@@ -1,1 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>East Charlotte Christian | Game Day</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">
+      <b>East Charlotte Christian</b>
+      <span id="sub">Season 2025–26 • Coach Wayne</span>
+    </div>
+    <div class="row" style="width:auto">
+      <a class="badge" href="admin.html" id="adminLink" style="display:none;text-decoration:none">Admin</a>
+      <button class="btn2" id="logoutBtn" style="width:auto;padding:10px 12px">Logout</button>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="grid">
+      <div class="card">
+        <h2>Roster</h2>
+        <div class="small">Names + jersey numbers</div>
+        <div class="list" id="rosterList" style="margin-top:10px"></div>
+      </div>
+
+      <div class="card">
+        <h2>Games</h2>
+        <div class="small">Select a game to view final stats + film (login required)</div>
+        <div class="list" id="gameList" style="margin-top:10px"></div>
+      </div>
+
+      <div class="card" style="grid-column:1/-1">
+        <h2 id="gameTitle">Game Details</h2>
+        <div class="kpis">
+          <div class="kpi"><b id="scoreFor">—</b><span>ECC</span></div>
+          <div class="kpi"><b id="scoreOpp">—</b><span>Opp</span></div>
+          <div class="kpi"><b id="status">—</b><span>Status</span></div>
+        </div>
+
+        <hr/>
+        <div class="row">
+          <span class="pill">Film (login required)</span>
+          <a id="filmLink" href="#" target="_blank" style="display:none">Watch game film</a>
+          <span class="small" id="filmMsg">Select a game.</span>
+        </div>
+
+        <hr/>
+        <h2 style="margin-top:0">Final Player Stats</h2>
+        <div class="list" id="statsList"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
 
