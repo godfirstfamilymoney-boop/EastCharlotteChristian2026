@@ -4,5 +4,5 @@ const firebaseConfig = {
   projectId: "east-charlotte-christian-2026",
   storageBucket: "east-charlotte-christian-2026.firebasestorage.app",
   messagingSenderId: "358859491654",
-  appId: "1:358859491654:web:f14516a4eb2b3156cabd47"
+  appId: "1:358859491654:web:644a846cba393507cabd47"
 };
