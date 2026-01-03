@@ -1,1 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>ECC Admin | Coach Wayne</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">
+      <b>ECC Admin</b>
+      <span>Coach Wayne • 2025–26</span>
+    </div>
+    <a class="badge" href="app.html" style="text-decoration:none">Back</a>
+  </div>
+
+  <div class="wrap">
+    <div class="grid">
+      <div class="card">
+        <h2>Add Player</h2>
+        <div class="split">
+          <div>
+            <label class="small">Player Name</label>
+            <input id="pName" placeholder="First Last"/>
+          </div>
+          <div>
+            <label class="small">Jersey #</label>
+            <input id="pNum" placeholder="0" inputmode="numeric"/>
+          </div>
+        </div>
+        <button class="btn" id="addPlayerBtn" style="margin-top:10px">Add Player</button>
+        <p class="small" id="pMsg"></p>
+        <hr/>
+        <div class="small">Current Roster</div>
+        <div class="list" id="adminRoster"></div>
+      </div>
+
+      <div class="card">
+        <h2>Create Game</h2>
+        <div class="split">
+          <div>
+            <label class="small">Opponent</label>
+            <input id="gOpp" placeholder="West Charlotte"/>
+          </div>
+          <div>
+            <label class="small">Date</label>
+            <input id="gDate" type="date"/>
+          </div>
+        </div>
+        <div class="split" style="margin-top:10px">
+          <div>
+            <label class="small">ECC Score</label>
+            <input id="gFor" inputmode="numeric" placeholder="0"/>
+          </div>
+          <div>
+            <label class="small">Opponent Score</label>
+            <input id="gOppScore" inputmode="numeric" placeholder="0"/>
+          </div>
+        </div>
+        <label class="small" style="display:block;margin-top:10px">Film Link (Google Drive “Anyone with link: View”)</label>
+        <input id="gFilm" placeholder="https://drive.google.com/..."/>
+        <button class="btn" id="createGameBtn" style="margin-top:10px">Create Game</button>
+        <p class="small" id="gMsg"></p>
+
+        <hr/>
+        <h2 style="margin-top:0">Add Stats to a Game</h2>
+        <label class="small">Choose Game</label>
+        <select id="gameSelect"></select>
+
+        <label class="small" style="margin-top:10px;display:block">Choose Player</label>
+        <select id="playerSelect"></select>
+
+        <div class="split" style="margin-top:10px">
+          <div><label class="small">PTS</label><input id="sPts" inputmode="numeric" placeholder="0"/></div>
+          <div><label class="small">REB</label><input id="sReb" inputmode="numeric" placeholder="0"/></div>
+        </div>
+        <div class="split" style="margin-top:10px">
+          <div><label class="small">AST</label><input id="sAst" inputmode="numeric" placeholder="0"/></div>
+          <div><label class="small">STL</label><input id="sStl" inputmode="numeric" placeholder="0"/></div>
+        </div>
+        <div class="split" style="margin-top:10px">
+          <div><label class="small">BLK</label><input id="sBlk" inputmode="numeric" placeholder="0"/></div>
+          <div><label class="small">FOUL</label><input id="sFoul" inputmode="numeric" placeholder="0"/></div>
+        </div>
+
+        <button class="btn" id="saveStatBtn" style="margin-top:10px">Save Player Stat</button>
+        <p class="small" id="sMsg"></p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
 
