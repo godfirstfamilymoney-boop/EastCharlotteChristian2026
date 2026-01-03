@@ -1,1 +1,1 @@
-# EastCharlotteChristian2026
+# East-Charlotte-Christian-GameDay
